@@ -21,9 +21,10 @@ text). Settings, history, statistics and logs stay in your Windows user profile.
 
 **Internet.** SayZed connects to the internet only:
 
-- to download its speech and translation models from Hugging Face (huggingface.co): at the first start of the
-  Microsoft Store version, or when you download a model in the settings. Hugging Face receives your IP address, as
-  with any download.
+- to download its speech and translation models from Hugging Face (huggingface.co), or from SayZed's copy of the
+  same files on GitHub (github.com/ZdenekBrezina/sayzed-models) when Hugging Face cannot be reached: at the first
+  start of the Microsoft Store version, or when you download a model in the settings. The server you download from
+  receives your IP address, as with any download.
 - for the optional LLM clean-up, if you turn it on and enter a server. That server receives the dictated text. With
   a server on your PC or in your network the text stays there; with an online service the text leaves your PC and
   that service's privacy policy applies.
@@ -56,9 +57,10 @@ keinen diktierten Text.
 
 **Internet.** SayZed verbindet sich nur mit dem Internet:
 
-- um seine Sprach- und Übersetzungsmodelle von Hugging Face (huggingface.co) herunterzuladen: beim ersten Start der
-  Version aus dem Microsoft Store oder wenn du in den Einstellungen ein Modell herunterlädst. Hugging Face erhält
-  dabei, wie bei jedem Download, deine IP-Adresse.
+- um seine Sprach- und Übersetzungsmodelle von Hugging Face (huggingface.co) herunterzuladen, oder aus der Kopie
+  derselben Dateien von SayZed auf GitHub (github.com/ZdenekBrezina/sayzed-models), wenn Hugging Face nicht
+  erreichbar ist: beim ersten Start der Version aus dem Microsoft Store oder wenn du in den Einstellungen ein Modell
+  herunterlädst. Der Server, von dem du lädst, erhält dabei wie bei jedem Download deine IP-Adresse.
 - für die optionale Überarbeitung per LLM, wenn du sie einschaltest und einen Server einträgst. Dieser Server erhält
   den diktierten Text. Mit einem Server auf deinem PC oder in deinem Netz bleibt der Text dort; mit einem
   Online-Dienst verlässt der Text deinen PC, und es gilt die Datenschutzerklärung dieses Dienstes.
@@ -88,8 +90,10 @@ historie, statistika i logy zůstávají v tvém uživatelském profilu Windows.
 
 **Internet.** SayZed se připojuje k internetu jen:
 
-- kvůli stažení svých modelů řeči a překladu z Hugging Face (huggingface.co): při prvním spuštění verze z Microsoft
-  Store, nebo když si model stáhneš v nastavení. Hugging Face přitom jako u každého stahování vidí tvoji IP adresu.
+- kvůli stažení svých modelů řeči a překladu z Hugging Face (huggingface.co), nebo z kopie stejných souborů od
+  SayZed na GitHubu (github.com/ZdenekBrezina/sayzed-models), když Hugging Face není dostupný: při prvním spuštění
+  verze z Microsoft Store, nebo když si model stáhneš v nastavení. Server, ze kterého stahuješ, přitom jako
+  u každého stahování vidí tvoji IP adresu.
 - kvůli volitelné úpravě přes LLM, když ji zapneš a zadáš server. Ten server dostane diktovaný text. Se serverem
   v tvém počítači nebo síti text zůstane tam; s online službou text tvůj počítač opustí a platí zásady té služby.
 
