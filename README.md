@@ -1,5 +1,11 @@
 # SayZed – Privacy policy
 
+**The current privacy policy, for SayZed 1.0 and the Microsoft Store version, with Gmail, Google Calendar and Google
+Drive: https://zdenekbrezina.github.io/sayzed-privacy/privacy/** · Terms of use:
+https://zdenekbrezina.github.io/sayzed-privacy/terms/
+
+Below, the version of 18 October 2026 for the Microsoft Store version 0.5.
+
 [English](#english) · [Deutsch](#deutsch) · [Čeština](#čeština)
 
 Effective 18 October 2026.
