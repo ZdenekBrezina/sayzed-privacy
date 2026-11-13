@@ -17,7 +17,7 @@
   <section>
     <div class="lang"><a href="#deutsch">Deutsch</a> · <a href="#english">English</a></div>
     <h1 id="deutsch">Datenschutzerklärung</h1>
-    <p>Stand: 12. November 2026. Gilt für SayZed 1.0 für Windows und die Version aus dem Microsoft Store.</p>
+    <p>Stand: 13. November 2026. Gilt für SayZed 1.0 für Windows und die Version aus dem Microsoft Store.</p>
     <p>Verantwortlich: Zdenek Brezina, <a href="mailto:sayzed@zbrezina.de">sayzed@zbrezina.de</a>. SayZed hat keine
       Werbung, keine Analyse und keine Telemetrie und verkauft oder teilt keine personenbezogenen Daten.</p>
 
@@ -30,8 +30,8 @@
       Tag (nur Zahlen). Einstellungen, Verlauf, Wörterbuch und Logs bleiben in deinem Windows-Benutzerprofil; die Logs
       enthalten keinen diktierten Text. Den Verlauf der Zwischenablage für Zed hält SayZed nur im Arbeitsspeicher, 24
       Stunden lang.</p>
-    <p><strong>Schlüssel und Anmeldungen.</strong> API-Schlüssel, die du einträgst, und deine Anmeldungen bei Google hält
-      SayZed in der Windows-Anmeldeinformationsverwaltung, nie in den Einstellungen oder einer Exportdatei.</p>
+    <p><strong>Schlüssel und Anmeldungen.</strong> API-Schlüssel, die du einträgst, und deine Anmeldungen bei Google und
+      Microsoft hält SayZed in der Windows-Anmeldeinformationsverwaltung, nie in den Einstellungen oder einer Exportdatei.</p>
 
     <h2>Was SayZed ins Internet schickt</h2>
     <ul>
@@ -52,9 +52,22 @@
         GitHub, wenn du sie herunterlädst. Der Server erhält dabei deine IP-Adresse.</li>
     </ul>
 
-    <h2>Konnektoren: Outlook und Google</h2>
+    <h2>Konnektoren: Outlook, Microsoft 365 und Google</h2>
     <p>Konnektoren sind aus, bis du sie einschaltest. <strong>Outlook auf diesem PC</strong> liest im klassischen Outlook
-      auf deinem PC. <strong>Gmail, Google Kalender und Google Drive</strong> nutzen deinen eigenen Google-Zugang (einen
+      auf deinem PC.</p>
+    <p><strong>Microsoft 365</strong> (Outlook-Mails, Kalender, OneDrive und SharePoint, Kontakte, Microsoft To Do und
+      Planner, Teams-Chats) nutzt eine App-Registrierung in Microsoft Entra, in einer Firma die der Organisation. Du
+      meldest dich in deinem Browser bei Microsoft an und stimmst dort zu, was SayZed darf: Mails lesen und Entwürfe
+      anlegen, Kalender lesen und eigene Termine eintragen, Dateien lesen, Kontakte und die Personen im Verzeichnis deiner
+      Firma lesen, Aufgaben in To Do und Planner lesen, anlegen und abhaken, Teams-Chats lesen; eine Nachricht in Teams
+      bereitet SayZed nur vor, senden tust du. SayZed fragt Microsoft direkt von deinem PC aus, nur wenn du Zed etwas fragst oder die
+      Karte „Termine auf dem Desktop“ eingeschaltet ist; die Daten gehen über keinen Server von SayZed. Was Zed für eine
+      Antwort liest, geht an den KI-Dienst, den du für Zed gewählt hast, nur um deine Frage zu beantworten. Zed sendet nie
+      selbst: Mails legt es als Entwurf an und öffnet sie in Outlook im Web, Einladungen öffnet es vorbereitet; senden tust
+      du. Zugriff entziehen: in SayZed bei dem Konto „Abmelden“ (SayZed vergisst die Anmeldung auf deinem PC) und unter
+      <a href="https://myapps.microsoft.com">myapps.microsoft.com</a> (Arbeitskonto) oder
+      <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a> (persönliches Konto).</p>
+    <p><strong>Gmail, Google Kalender und Google Drive</strong> nutzen deinen eigenen Google-Zugang (einen
       OAuth-Client in deinem eigenen Google-Cloud-Projekt, in einer Firma den der Organisation). Du meldest dich in deinem
       Browser bei Google an und entscheidest dort, was SayZed darf: Gmail lesen und Entwürfe anlegen, Kalender lesen und
       eigene Termine eintragen, Dateien in Drive lesen.</p>
@@ -87,7 +100,7 @@
       <a href="https://privacy.microsoft.com/privacystatement">Microsoft-Datenschutzerklärung</a>.</p>
 
     <h2>Daten löschen und deine Rechte</h2>
-    <p>Den Verlauf löschst du in SayZed, Schlüssel und Google-Konten entfernst du dort. Beim Deinstallieren bleiben deine
+    <p>Den Verlauf löschst du in SayZed, Schlüssel sowie Google- und Microsoft-Konten entfernst du dort. Beim Deinstallieren bleiben deine
       Einstellungen, dein Wörterbuch und dein Verlauf in deinem Windows-Benutzerprofil (%LOCALAPPDATA%), wo du sie
       jederzeit löschen kannst. Bei Fragen zu deinen Daten und
       deinen Rechten nach der DSGVO (Auskunft, Löschung, Beschwerde bei einer Aufsichtsbehörde) schreib an
@@ -97,7 +110,7 @@
 
   <section>
     <h1 id="english">Privacy policy</h1>
-    <p>Effective 12 November 2026. Applies to SayZed 1.0 for Windows and the Microsoft Store version.</p>
+    <p>Effective 13 November 2026. Applies to SayZed 1.0 for Windows and the Microsoft Store version.</p>
     <p>Controller: Zdenek Brezina, <a href="mailto:sayzed@zbrezina.de">sayzed@zbrezina.de</a>. SayZed has no
       advertising, no analytics and no telemetry, and it does not sell or share personal data.</p>
 
@@ -109,8 +122,8 @@
       dictations and questions to Zed in a history on your PC (you can turn it off or clear it) and counts words per day
       (numbers only). Settings, history, dictionary and logs stay in your Windows user profile; logs contain no dictated
       text. Zed's clipboard history is kept in memory only, for 24 hours.</p>
-    <p><strong>Keys and sign-ins.</strong> API keys you enter and your Google sign-ins are kept in the Windows Credential
-      Manager, never in the settings or an export file.</p>
+    <p><strong>Keys and sign-ins.</strong> API keys you enter and your Google and Microsoft sign-ins are kept in the
+      Windows Credential Manager, never in the settings or an export file.</p>
 
     <h2>What SayZed sends to the internet</h2>
     <ul>
@@ -130,9 +143,21 @@
         GitHub, when you download them. The server receives your IP address.</li>
     </ul>
 
-    <h2>Connectors: Outlook and Google</h2>
+    <h2>Connectors: Outlook, Microsoft 365 and Google</h2>
     <p>Connectors are off until you switch them on. <strong>Outlook on this PC</strong> reads the classic Outlook on
-      your PC. <strong>Gmail, Google Calendar and Google Drive</strong> use your own Google access (an OAuth client in
+      your PC.</p>
+    <p><strong>Microsoft 365</strong> (Outlook mail, calendars, OneDrive and SharePoint, contacts, Microsoft To Do and
+      Planner, Teams chats) uses an app registration in Microsoft Entra; in a company, the organisation's. You sign in to
+      Microsoft in your browser and consent there to what SayZed may do: read mail and create drafts, read calendars and
+      add your own appointments, read files, read contacts and the people in your company's directory, read, add and
+      complete tasks in To Do and Planner, read Teams chats; a message in Teams SayZed only prepares, you send it. SayZed asks Microsoft directly from your PC, only when you ask Zed something or the card “Termine auf dem
+      Desktop” is on; the data passes no server of SayZed. What Zed reads for an answer goes to the AI service you chose
+      for Zed, only to answer your question. Zed never sends anything itself: mails become drafts that open in Outlook
+      on the web, invitations open prepared; you send them. Withdrawing access: “Abmelden” at the account in SayZed
+      (SayZed forgets the sign-in on your PC) and at <a href="https://myapps.microsoft.com">myapps.microsoft.com</a>
+      (work account) or <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a> (personal
+      account).</p>
+    <p><strong>Gmail, Google Calendar and Google Drive</strong> use your own Google access (an OAuth client in
       your own Google Cloud project; in a company, the organisation's). You sign in to Google in your browser and decide
       there what SayZed may do: read Gmail and create drafts, read calendars and add your own appointments, read files
       in Drive.</p>
@@ -162,7 +187,7 @@
       <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</p>
 
     <h2>Deleting data and your rights</h2>
-    <p>You clear the history in SayZed and remove keys and Google accounts there. Uninstalling keeps your settings,
+    <p>You clear the history in SayZed and remove keys and Google and Microsoft accounts there. Uninstalling keeps your settings,
       dictionary and history in your Windows user profile (%LOCALAPPDATA%), where you can delete them at any time. For questions about your data and your rights under the
       GDPR (access, erasure, a complaint to a supervisory authority), write to
       <a href="mailto:sayzed@zbrezina.de">sayzed@zbrezina.de</a>. SayZed itself holds no data about you on a server.</p>
