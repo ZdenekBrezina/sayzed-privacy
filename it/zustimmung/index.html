@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SayZed – Zustimmung der IT / Admin consent</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <header>
+    <span class="logo"><i style="height:12px"></i><i style="height:26px"></i><i style="height:19px"></i></span>
+    <a href="../../">SayZed</a>
+    <nav><a href="../../handbuch/">Handbuch</a><a href="../../privacy/">Datenschutz</a><a href="../../terms/">Nutzungsbedingungen</a></nav>
+  </header>
+
+  <section>
+    <div class="lang"><a href="#deutsch">Deutsch</a> · <a href="#english">English</a></div>
+    <h1 id="deutsch">Zustimmung für SayZed</h1>
+    <p class="done">Erledigt: Microsoft hat SayZed für deine Organisation zugelassen. Alle in deiner Firma melden sich jetzt
+      in SayZed unter Einstellungen › Zed › Konnektoren › Microsoft-365-Konto mit „Mit Microsoft anmelden“ an, ohne
+      selbst zustimmen zu müssen.</p>
+    <p class="refused" hidden>Nicht zugelassen. Microsoft meldet: <span class="why"></span>. Nur ein Administrator der
+      Organisation (zum Beispiel Globaler Administrator oder Cloudanwendungsadministrator) kann für alle zustimmen.</p>
+    <h2>Was SayZed damit darf</h2>
+    <p>Nur im Namen der Person, die sich anmeldet, und nur, was sie selbst darf: Mails lesen und Entwürfe anlegen,
+      Kalender lesen und eigene Termine eintragen, Dateien lesen, Kontakte und die Personen der Organisation lesen,
+      Aufgaben in To Do und Planner führen, Teams-Chats lesen und eine Nachricht senden, wenn die Person auf „Senden“
+      klickt. Die Daten gehen direkt zwischen Microsoft und SayZed auf dem PC, über keinen Server von SayZed. Einzelne
+      Teile schaltet die IT mit den Richtlinien von SayZed ab (IT-Leitfaden).</p>
+    <h2>Zurücknehmen</h2>
+    <p>Microsoft Entra admin center › Unternehmensanwendungen › SayZed: unter Berechtigungen die Zustimmung prüfen, unter
+      Eigenschaften die Anmeldung sperren oder die Anwendung löschen.</p>
+  </section>
+
+  <section>
+    <h1 id="english">Admin consent for SayZed</h1>
+    <p class="done">Done: Microsoft has allowed SayZed for your organisation. Everyone in your company now signs in in
+      SayZed under Einstellungen › Zed › Konnektoren › Microsoft-365-Konto with “Mit Microsoft anmelden”, without having
+      to consent themselves.</p>
+    <p class="refused" hidden>Not allowed. Microsoft says: <span class="why"></span>. Only an administrator of the
+      organisation (for example Global Administrator or Cloud Application Administrator) can consent for everyone.</p>
+    <h2>What SayZed may do</h2>
+    <p>Only on behalf of the person who signs in, and only what they may do themselves: read mail and create drafts, read
+      calendars and add their own appointments, read files, read contacts and the organisation's people, manage tasks in
+      To Do and Planner, read Teams chats and send a message when the person clicks “Senden”. The data passes directly
+      between Microsoft and SayZed on the PC, through no server of SayZed. IT switches parts off with SayZed's policies
+      (IT guide).</p>
+    <h2>Withdrawing it</h2>
+    <p>Microsoft Entra admin center › Enterprise applications › SayZed: check the consent under Permissions, block sign-in
+      or delete the application under Properties.</p>
+  </section>
+  <footer><a href="../../">SayZed</a> · <a href="../../privacy/">Datenschutz / Privacy</a></footer>
+</main>
+<script>
+  // Microsoft comes back here with ?admin_consent=True, or with ?error=…&error_description=… when it was refused
+  const q = new URLSearchParams(location.search);
+  if (q.get("error")) {
+    const why = (q.get("error_description") || q.get("error")).split(/\r?\n/)[0];
+    document.querySelectorAll(".done").forEach((p) => (p.hidden = true));
+    document.querySelectorAll(".refused").forEach((p) => (p.hidden = false));
+    document.querySelectorAll(".why").forEach((s) => (s.textContent = why));
+  }
+</script>
+</body>
+</html>
