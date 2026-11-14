@@ -1,0 +1,12 @@
+{
+  "client_id": "https://zdenekbrezina.github.io/sayzed-privacy/oauth/client.json",
+  "client_name": "SayZed",
+  "client_uri": "https://zdenekbrezina.github.io/sayzed-privacy/",
+  "policy_uri": "https://zdenekbrezina.github.io/sayzed-privacy/privacy/",
+  "tos_uri": "https://zdenekbrezina.github.io/sayzed-privacy/terms/",
+  "redirect_uris": ["http://127.0.0.1/callback", "http://localhost/callback"],
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "token_endpoint_auth_method": "none",
+  "application_type": "native"
+}
